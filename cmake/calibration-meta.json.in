@@ -1,0 +1,15 @@
+{
+  "bench": "@CMAKE_BINARY_DIR@/CanMehBench",
+  "data": "@CMAKE_BINARY_DIR@/data",
+  "cxx": "@CMAKE_CXX_COMPILER@",
+  "repetitions": 9,
+  "repeat": 10,
+  "calibration": {
+    "reference_units": @PAIR_REFERENCE_UNITS@,
+    "candidate_units": @PAIR_CANDIDATE_UNITS@,
+    "buffer_mib": @CANMEH_CALIBRATION_BUFFER_MIB@,
+    "opt": "@CMAKE_CXX_FLAGS_RELEASE@",
+    "digest_broken": @PAIR_DIGEST_BROKEN@,
+    "install_name_shared": @PAIR_INSTALL_NAME_SHARED@
+  }
+}

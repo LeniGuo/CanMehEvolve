@@ -1,0 +1,23 @@
+# The FIT SDK is licensed and must never be committed. CMake fetches it while
+# configuring, which is how each person accepts its license terms.
+sdk/
+lab/
+runs/
+data/
+*.o
+*.so
+*.dylib
+calib/
+CanMehHarness
+CanMehSearch
+CanMehBench
+CanMehCalibrate
+CanMehDataGenerator
+CanMehDecodeForSampler
+
+# CMake writes the fetched SDK into whichever build directory it configured, so
+# ignoring sdk/ alone is not enough and ignoring build/ alone is not enough
+# either: build-check/ and build-prepipe/ have each held a copy. This glob
+# covers every build directory, present and future.
+build*/
+_deps/
